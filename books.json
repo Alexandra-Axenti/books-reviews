@@ -1,0 +1,26 @@
+{"books": [{
+  "image": "https://books.google.com.hk/books/content?id=CBRRIoqyc-EC&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE71S4OBYWNreG_NEtDDIkr_XXlxJcsxkWWYz6X-nBasS6azhT76ngqQOobn10pSZb_mFesqkLG_UeLpn_DI6OGZVW_ovCxbdJh8cK95JjZPtGpUqnapl8zvyWUjeRRv1I9_7nb_v",
+  "title": "The Omnivore's Dilemma",
+  "author": "Michael Pollan",
+  "genre": "nonfiction",
+  "summary": "What should we have for dinner? When you can eat just about anything nature (or the supermarket) has to offer, deciding what you should eat will inevitably stir anxiety, especially when some of the foods might shorten your life. Today, buffeted by one food fad after another, America is suffering from a national eating disorder. As the cornucopia of the modern American supermarket and fast food outlet confronts us with a bewildering and treacherous landscape, what's at stake becomes not only our own and our children's health, but the health of the environment that sustains life on earth. Pollan follows each of the food chains--industrial food, organic or alternative food, and food we forage ourselves--from the source to the final meal, always emphasizing our coevolutionary relationship with the handful of plant and animal species we depend on. The surprising answers Pollan offers have profound political, economic, psychological, and even moral implications for all of us.",
+  "publisher":"Bloomsbury",
+  "year": 2007
+  }, {
+  "image": "https://books.google.com.hk/books/content?id=uUNKAAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE73o6eJIOMxWCp39vvbk0LWFYXXGW0sCHSd7uIG8drxnzAi4HczdfHaBepaAz5jJg7xGxexB_nDWhaIXA-itGAtE21yVu9oLjYFcxMdsCWcN-k5ubgNuUL1v8ah5s5Ai_sbxSUre",
+  "title": "The Death of Money: The Coming Collapse of the International Monetary System",
+  "author": "James Rickards",
+  "genre": "nonfiction",
+  "summary": "The U.S. dollar has been the global reserve currency since the end of World War II. If the dollar fails, the entire international monetary system will fail with it. But optimists have always said, in essence, that confidence in the dollar will never truly be shaken, no matter how high our national debt or how dysfunctional our government. In the last few years, however, the risks have become too big to ignore. While Washington is gridlocked, our biggest rivals—China, Russia, and the oil-producing nations of the Middle East—are doing everything possible to end U.S. monetary hegemony. The potential results: Financial warfare. Deflation. Hyperinflation. Market collapse. Chaos.",
+  "publisher": "Penguin",
+  "year": 2014
+  }, {
+  "image": "https://images-na.ssl-images-amazon.com/images/I/71NDnv8%2BhvL.jpg",
+  "title": "Quiet: The Power of Introverts in a World That Can't Stop Talking‎",
+  "author": "Susan Cain",
+  "genre": "nonfiction",
+  "summary": "At least one-third of the people we know are introverts. They are the ones who prefer listening to speaking; who innovate and create but dislike self-promotion; who favor working on their own over working in teams. It is to introverts—Rosa Parks, Chopin, Dr. Seuss, Steve Wozniak—that we owe many of the great contributions to society. ",
+  "publisher": "Broadway Books",
+  "year": 2013
+  }]
+}
