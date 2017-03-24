@@ -1,6 +1,7 @@
 <div id="index">
-<h4>Pick a book from the list to see more details:</h4>
-
+  <br>
+<button class="btn-admin">{{#link-to 'admin' class="btn-admin"}}ADMIN{{/link-to}}</button>
+  <br><br>
 {{#each model as |book|}}
   <table>
     <tr>
@@ -14,6 +15,8 @@
   </table>
   <br><br>
 {{/each}}
-</div>
 
-{{#link-to 'admin'}}ADMIN{{/link-to}}
+<br><br>
+
+
+</div>

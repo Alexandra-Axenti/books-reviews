@@ -1,6 +1,8 @@
 <div id="admin">
   For admin use only
-  <br>
-  {{book.title}} by {{book.author}}
-
+  <br><br><br>
+  {{#each model as |book|}}
+    <h3>{{book.title}}</h3> by {{book.author}}
+    <br><br>
+  {{/each}}
 </div>
