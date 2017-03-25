@@ -7,5 +7,6 @@ export default DS.Model.extend({
   genre: DS.attr(),
   summary: DS.attr(),
   publisher: DS.attr(),
-  year: DS.attr()
+  year: DS.attr(),
+  reviews: DS.hasMany()
 });

@@ -1,8 +1,8 @@
 <div id="admin">
-  For admin use only
-  <br><br><br>
   {{#each model as |book|}}
-    <h3>{{book.title}}</h3> by {{book.author}}
-    <br><br>
+    <div clas="tile">
+      {{book.title}} by {{book.author}}
+      {{edit-book 'edit' book=book class="btn-edit"}}
+    </div>
   {{/each}}
 </div>
