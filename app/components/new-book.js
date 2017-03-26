@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   addNewBook: false,
+  
  actions: {
    addNewBook() {
      this.set('addNewBook', true);

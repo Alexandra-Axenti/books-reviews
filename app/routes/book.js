@@ -2,7 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    return this.store.findRecord('book', params.book_id);
+    return Ember.RSVP.hash({
+      book: this.store.findRecord('book', params.book_id),
+      reviews: this.store.findAll('review')
+    });
   },
 
   actions: {
@@ -14,7 +17,7 @@ export default Ember.Route.extend({
       newReview.save().then(function() {
         return book.save();
       });
-      this.transitionTo('book', book);
+      this.transitionTo('book', book_id);
     }
   }
 });

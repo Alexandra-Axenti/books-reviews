@@ -1,6 +1,8 @@
 <div id="book">
-  <div>{{model.title}}</div><br>
-  <div>{{model.author}}</div><br>
-  <div>{{model.summary}}</div><br>
-  <div>{{model.publisher}}</div><br>
+  <div>{{model.book.title}}</div><br>
+  <div>{{model.book.author}}</div><br>
+  <div>{{model.book.summary}}</div><br>
+  <div>{{model.book.publisher}}</div><br>
+
+  {{new-review saveReview='saveReview' book=model.book}}
 </div>
