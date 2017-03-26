@@ -14,8 +14,8 @@
       </div>
 
       <div class="form-group">
-        <label for="summary">Description:</label>
-        {{input value=summary id="summary" placeholder=book.summary}}
+        <label for="genre">Genre:</label>
+        {{input value=genre id="genre" placeholder=book.genre}}
       </div>
 
       <div class="form-group">
@@ -28,8 +28,18 @@
         {{input value=image id="image" placeholder=book.image}}
       </div>
 
+      <div class="form-group">
+        <label for="publisher">Publisher:</label>
+        {{input value=publisher id="publisher" placeholder=book.publisher}}
+      </div>
+
+      <div class="form-group">
+        <label for="year">Year:</label>
+        {{input value=year id="year" placeholder=book.year}}
+      </div>
+
       <button {{action 'edit' book}}>Save</button>
-    </form>  
+    </form>
   </div>
 
 {{else}}

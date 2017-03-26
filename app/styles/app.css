@@ -36,6 +36,19 @@
   padding: 5% 5% 0 5%;
 }
 
+#book {
+  background: url('/resources/images/paper.jpg') no-repeat center center fixed;
+  text-align: justify;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 125%;
+  width: 100%;
+  margin-top: -25px;
+  padding: 5% 5% 0 5%;
+}
+
 .btn-admin {
   float: right;
   color: white;

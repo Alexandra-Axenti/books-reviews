@@ -5,7 +5,7 @@
 {{#each model as |book|}}
   <table>
     <tr>
-      <td><img class="img" src={{book.image}}></td>
+      <td>{{#link-to 'book' book.id}}<img class="img" src={{book.image}}>{{/link-to}}</td>
       <td id="displayContent">
         <tr>{{book.title}}</tr>
         <tr>by {{book.author}}</tr>

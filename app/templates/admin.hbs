@@ -1,8 +1,11 @@
 <div id="admin">
-  {{#each model as |book|}}
+  {{#each model.books as |book|}}
     <div clas="tile">
       {{book.title}} by {{book.author}}
-      {{edit-book 'edit' book=book class="btn-edit"}}
+      {{edit-book book=book edit='edit' class="btn-tile"}}
     </div>
   {{/each}}
-</div>
+    <br><br>
+  {{new-book saveBook='saveBook' class="btn-tile"}}
+
+</div>something

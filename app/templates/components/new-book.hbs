@@ -1,1 +1,45 @@
-{{yield}}
+{{#if addNewBook}}
+  <h1>New Book Entry</h1>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="title">Title</label>
+        {{input value=title id="title"}}
+      </div>
+
+      <div class="form-group">
+        <label for="author">Author</label>
+        {{input value=author id="author"}}
+      </div>
+
+      <div class="form-group">
+        <label for="genre">Genre</label>
+        {{input value=genre id="genre"}}
+      </div>
+
+      <div class="form-group">
+        <label for="summary">Description</label>
+        {{input value=summary id="summary"}}
+      </div>
+
+      <div class="form-group">
+        <label for="image">Book image URL</label>
+        {{input value=image id="image"}}
+      </div>
+
+      <div class="form-group">
+        <label for="publisher">Publisher</label>
+        {{input value=publisher id="publisher"}}
+      </div>
+
+      <div class="form-group">
+        <label for="year">Year</label>
+        {{input value=year id="year"}}
+      </div>
+
+      <button {{action 'saveBook'}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'addNewBook'}}>Add Book</button>
+{{/if}}

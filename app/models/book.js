@@ -8,5 +8,5 @@ export default DS.Model.extend({
   summary: DS.attr(),
   publisher: DS.attr(),
   year: DS.attr(),
-  reviews: DS.hasMany()
+  reviews: DS.hasMany('review', { async: true })
 });

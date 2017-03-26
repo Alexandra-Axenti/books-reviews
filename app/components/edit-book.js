@@ -4,7 +4,9 @@ export default Ember.Component.extend({
   editBookForm: false,
 
   model() {
-    return this.store.findAll('book');
+    return Ember.RSVP.hash({
+      books: this.store.findAll('book'),
+    });
   },
 
   actions: {
