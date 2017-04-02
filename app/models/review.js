@@ -5,6 +5,6 @@ export default DS.Model.extend({
   author: DS.attr(),
   email: DS.attr(),
   content: DS.attr(),
-  rating: DS.attr(),
+  rating: DS.attr('number'),
   book: DS.belongsTo('book', { async: true })
 });

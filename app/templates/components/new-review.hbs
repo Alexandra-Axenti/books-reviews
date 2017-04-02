@@ -18,13 +18,20 @@
       </div>
 
       <div class="form-group">
-        <label for="rating">Rating</label>
-        {{input value=rating id="rating"}}
+        <label for="content">Content</label>
+        {{input value=content id="content"}}
       </div>
 
       <div class="form-group">
-        <label for="content">Content</label>
-        {{input value=content id="content"}}
+        <label for="rating">Please select a rating:</label>
+        <select name="rating" id="rating" onchange={{action (mut rating) value="target.value"}}>
+          <option value=1>1</option>
+          <option value=2>2</option>
+          <option value=3>3</option>
+          <option value=4>4</option>
+          <option value=5>5</option>
+          <option value="" selected=true>Please select a rating</option>
+        </select>
       </div>
 
       <button {{action 'saveReview'}}>Save</button>
