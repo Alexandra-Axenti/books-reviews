@@ -7,7 +7,8 @@
   {{new-review saveReview='saveReview' book=model.book}}<br><br>
 
   {{#each model.reviews as |review|}}
-  <div>{{review.title}} by {{review.author}}</div>
+  <div>{{comment-rating review}}
+    {{review.title}} by {{review.author}}</div>
   <div>{{review.content}}</div><br><br>
   {{/each}}
 </div>
