@@ -1,5 +1,7 @@
 <div id="book">
-  <div>{{model.book.title}}</div><br>
+  Ember.String.htmlSafe('<span class="glyphicon glyphicon-star-half"></span>')
+  Ember.String.htmlSafe('<span class="glyphicons glyphicons-star-half"></span>')
+  <div>{{book-rating book=model.book}} {{model.book.title}}</div><br>
   <div>{{model.book.author}}</div><br>
   <div>{{model.book.summary}}</div><br>
   <div>{{model.book.publisher}}</div><br>

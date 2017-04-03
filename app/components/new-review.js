@@ -2,7 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
   rating: 5,
-  // ratings: Ember.Fixnum.w('5 4 3 2 1'),
   actions: {
     selectRating(rating) {
       this.set('rating',rating);

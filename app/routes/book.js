@@ -9,7 +9,6 @@ export default Ember.Route.extend({
   },
 
   actions: {
-
     saveReview(params) {
       var newReview = this.store.createRecord('review', params);
       var book = params.book;
