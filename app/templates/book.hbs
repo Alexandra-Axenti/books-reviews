@@ -1,10 +1,16 @@
 <div id="book">
-  Ember.String.htmlSafe('<span class="glyphicon glyphicon-star-half"></span>')
-  Ember.String.htmlSafe('<span class="glyphicons glyphicons-star-half"></span>')
-  <div>{{book-rating book=model.book}} {{model.book.title}}</div><br>
-  <div>{{model.book.author}}</div><br>
-  <div>{{model.book.summary}}</div><br>
-  <div>{{model.book.publisher}}</div><br>
+
+  <div class="divTable">
+    <div class="Row">
+      <div class="Column"><img class="img" src={{model.book.image}}></div>
+      <div class="Column">
+        <div><span id="book-rating">{{book-rating book=model.book}}</span><span>{{model.book.title}}</span></div>
+        <div>by {{model.book.author}}</div>
+        <div>{{model.book.summary}}</div>
+        <div>{{model.book.year}}</div>
+      </div>
+    </div>
+  </div>
 
   {{new-review saveReview='saveReview' book=model.book}}<br><br>
 

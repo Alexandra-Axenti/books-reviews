@@ -1,6 +1,9 @@
 .img {
   height: 200px;
   width: 140px;
+  border: solid #381313 5px;
+  border-radius: 5px;
+  padding: 3px;
 }
 
 #summary {
@@ -15,7 +18,7 @@
   margin: 0;
   padding: 20px;
   background-color: gray;
-  background: url('/resources/images/books.jpg') no-repeat center center fixed;
+  background: url('/resources/images/books.jpg') repeat center center fixed;
   text-align: justify;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -32,21 +35,22 @@
   background-size: cover;
   height: 105%;
   width: 100%;
-  margin-top: -25px;
+  margin-top: -50px;
   padding: 5% 5% 0 5%;
 }
 
-#book {
+#book, #index {
   background: url('/resources/images/paper.jpg') no-repeat center center fixed;
   text-align: justify;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 125%;
+  height: 200%;
   width: 100%;
-  margin-top: -30px;
+  margin-top: -50px;
   padding: 5% 5% 0 5%;
+  margin-bottom: 50px;
 }
 
 .btn-admin {
@@ -72,11 +76,6 @@ body {
   height: 100%;
 }
 
-#index {
-  width: 100%;
-  padding: 0 5% 0 5%;
-}
-
 
 #mainTitle {
   padding: 0;
@@ -86,4 +85,23 @@ body {
   color: rgba(255,255,255,.9);
   max-width: 80%;
   background-color: rgba(0,0,0,.7)
+}
+
+.glyph {
+  display: inline-block;
+  height:13px;
+  width:13px;
+  font-size:13px;
+  text-align: center;
+  margin-top: -5px;
+  padding: 0;
+  -webkit-filter: grayscale(1000%);
+}
+
+#book-rating {
+  display: inline-block;
+}
+
+.col {
+  display: inline-block;
 }
