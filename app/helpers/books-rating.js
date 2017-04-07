@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export function booksRating(params/*, hash*/) {
-  var bookRating = params[0]
+  var bookRating = params[0];
 
   if (bookRating === 5) {
     return Ember.String.htmlSafe('<span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon"><image src="./public/resources/images/half.png"></image></span><span class="glyphicon"><image src="./public/resources/images/half.png"></image></span>');

@@ -4,7 +4,8 @@
     <div class="Row">
       <div class="Column"><img class="img" src={{model.book.image}}></div>
       <div class="Column">
-        <div><span id="book-rating">{{book-rating book=model.book}}</span><span>{{model.book.title}}</span></div>
+        <div><span>{{model.book.title}}</span></div>
+        <div id="book-rating">{{book-rating book=model.book}}</div>
         <div>by {{model.book.author}}</div>
         <div>{{model.book.summary}}</div>
         <div>{{model.book.year}}</div>
