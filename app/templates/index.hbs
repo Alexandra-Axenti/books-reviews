@@ -1,22 +1,13 @@
 <div id="index">
-  <br>
-  <button class="btn-admin">{{#link-to 'admin' class="btn-admin"}}ADMIN{{/link-to}}</button>
-  <br><br>
-{{#each model as |book|}}
-  <table>
-    <tr>
-      <td>{{#link-to 'book' book.id}}<img class="img" src={{book.image}}>{{/link-to}}</td>
-      <td id="displayContent">
-        <tr>{{book.title}}</tr>
-        <tr>by {{book.author}}</tr>
-        <tr><p id="summary"><{{book.summary}}</p></tr>
-      </td>
-    </tr>
-  </table>
-  <br><br>
-{{/each}}
+{{#link-to 'admin' class="btn-admin"}}ADMIN{{/link-to}}<br><br>
 
-<br><br>
+
+{{#each model as |book|}}
+
+        {{#link-to 'book' book.id}}<img src={{book.image}}>{{/link-to}}
+        <!-- {{book-rating book=book}} -->
+
+{{/each}}
 
 
 </div>

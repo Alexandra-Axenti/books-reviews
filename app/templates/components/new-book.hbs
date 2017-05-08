@@ -1,45 +1,37 @@
 {{#if addNewBook}}
-  <h1>New Book Entry</h1>
-  <div>
+  <div class="add-book">
     <form>
       <div class="form-group">
-        <label for="title">Title</label>
-        {{input value=title id="title"}}
+        {{input value=title id="title" placeholder="Title"}}
       </div>
 
       <div class="form-group">
-        <label for="author">Author</label>
-        {{input value=author id="author"}}
+        {{input value=author id="author" placeholder="Author"}}
       </div>
 
       <div class="form-group">
-        <label for="genre">Genre</label>
-        {{input value=genre id="genre"}}
+        {{input value=genre id="genre" placeholder="Genre"}}
       </div>
 
       <div class="form-group">
-        <label for="summary">Description</label>
-        {{input value=summary id="summary"}}
+        {{textarea value=summary id="summary" placeholder="Description"}}
       </div>
 
       <div class="form-group">
-        <label for="image">Book image URL</label>
-        {{input value=image id="image"}}
+        {{textarea value=image id="image" placeholder="Image URL"}}
       </div>
 
       <div class="form-group">
-        <label for="publisher">Publisher</label>
-        {{input value=publisher id="publisher"}}
+        {{input value=publisher id="publisher" placeholder="Publisher"}}
       </div>
 
       <div class="form-group">
-        <label for="year">Year</label>
-        {{input value=year id="year"}}
+        {{input value=year id="year" placeholder="Year"}}
       </div>
 
-      <button {{action 'saveBook'}}>Save</button>
+      <button class="btn-edit btn-add" {{action 'saveBook'}}>Add Book</button>
     </form>
   </div>
 {{else}}
-  <button {{action 'addNewBook'}}>Add Book</button>
+  <button class="btn-edit" {{action 'addNewBook'}}>Add Book</button>
 {{/if}}

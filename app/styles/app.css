@@ -1,71 +1,8 @@
-.img {
-  height: 200px;
-  width: 140px;
-  border: solid #381313 5px;
-  border-radius: 5px;
-  padding: 3px;
-}
 
-#summary {
-  font-size: 12px;
-  background-color: rgba(255, 255, 255, .8);
-  font-family: Roboto Slab;
-  color: #331200;
-  padding: 10px;
-}
-
-#main {
-  margin: 0;
-  padding: 20px;
-  background-color: gray;
-  background: url('/resources/images/books.jpg') repeat center center fixed;
-  text-align: justify;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-#admin {
-  background: url('/resources/images/lights-in-dark.jpg') no-repeat center center fixed;
-  text-align: justify;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 105%;
-  width: 100%;
-  margin-top: -50px;
-  padding: 5% 5% 0 5%;
-}
-
-#book, #index {
-  background: url('/resources/images/paper.jpg') no-repeat center center fixed;
-  text-align: justify;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 200%;
-  width: 100%;
-  margin-top: -50px;
-  padding: 5% 5% 0 5%;
-  margin-bottom: 50px;
-}
-
-.btn-admin {
-  float: right;
-  color: white;
-  border-radius: 5px;
-}
-
-.btn-admin:hover {
-  color: #35383f;
-  text-decoration: none;
-}
-
+/* Application Page */
 body {
-  margin: 0;
+  margin: 0!important;
+  font-size: 100%;
 }
 
 .application {
@@ -76,36 +13,197 @@ body {
   height: 100%;
 }
 
+#main {
+  margin: 0;
+  height: 100%;
+  padding: 3%;
+  background: url('/resources/images/books.jpg') repeat center center fixed;
+  text-align: justify;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 #mainTitle {
-  padding: 0;
-  padding-left: 20px;
+  margin-left: 10%;
+  padding-left: 7%;
   font-family: Ewert;
-  font-size: 32px;
+  font-size: 4em;
   color: rgba(255,255,255,.9);
   max-width: 80%;
   background-color: rgba(0,0,0,.7)
 }
 
-.glyph {
-  display: inline-block;
-  height:13px;
-  width:13px;
-  font-size:13px;
-  text-align: center;
-  margin-top: -5px;
-  padding: 0;
-  -webkit-filter: grayscale(1000%);
+/* Backgrounds */
+#book, #index {
+  background: url('/resources/images/paper.jpg') repeat center center fixed;
 }
 
-#book-rating {
-  display: inline-block;
+#admin {
+  background: url('/resources/images/plank.jpg') no-repeat center center fixed;
 }
 
-.col {
+#book, #index, #admin {
+  text-align: justify;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 2% -4% -5% -4%;
+  width: 110%;
+  padding: 5% 10% 0 10%;
+  min-height: 900px;
+}
+
+
+
+/* Other elements */
+img {
   display: inline-block;
+  margin: 1%;
+  margin-top: 0;
+  height: 420px;
+  width: 300px;
+  border: solid #381313 5px;
+  border-radius: 5px;
+  padding: 5px;
+  padding-top: 0;
+}
+
+
+/* Index Page Elements */
+.btn-admin {
+  float: right;
+  font-size: 18px;
+  color: #381313;
+  padding: 3px;
+  border: 2px solid #381313;
+  border-radius: 5px;
+}
+
+.btn-admin:hover {
+  background-color: #381313;
+  color: white;
+  text-decoration: none;
+}
+
+
+/* Book Page Elements */
+.btn-home2 {
+  float: right;
+  font-size: 18px;
+  color: #381313;
+  padding: 3px;
+  border: 2px solid #381313;
+  border-radius: 5px;
+}
+
+.btn-home2:hover {
+  background-color: #381313;
+  color: white;
+  text-decoration: none;
+}
+
+.col-md-3 {
+  padding: 3%;
+  padding-top: 0;
+}
+
+.col-md-8 {
+  background-color: rgba(255, 255, 255, 0.5);
+  line-height: 1.4em;
+  font-size: 18px;
+  padding: 3%;
+}
+
+.row {
+  margin-bottom: 5%;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.author {
+  font-style: italic;
+  font-size: 16px;
+}
+
+.content {
+  font-size: 18px;
+}
+
+.review-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.review-author {
+  font-style: italic;
+  font-size: 16px;
 }
 
 .material-icons {
-  font-size: 14px;
+  font-size: 2.2em;
+}
+
+.review-element {
+  padding-bottom: 10%;
+}
+
+/* Add Review Form */
+.ember-text-field, select, textarea {
+  width: 300px;
+}
+
+#content-review {
+  min-height: 100px;
+}
+
+/* Admin Page */
+#admin-image {
+  border-color: rgba(255,255,255,0.7);
+  display: inline-block;
+}
+
+.btn-home {
+  float: right;
+  font-size: 18px;
+  color: white;
+  padding: 3px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.btn-home:hover {
+  background-color: white;
+  color: #381313;
+  text-decoration: none;
+}
+
+.btn-edit {
+  float: middle;
+  font-size: 18px;
+  background-color: transparent;
+  margin-left: 37%;
+  color: white;
+  padding: 3px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.btn-edit:hover {
+  background-color: white;
+  color: #381313;
+  text-decoration: none;
+}
+
+.add-book {
+  margin-left: 39%;
+}
+
+.btn-add {
+  margin-left: 11%;
 }

@@ -1,23 +1,32 @@
 <div id="book">
 
-  <div class="divTable">
-    <div class="Row">
-      <div class="Column"><img class="img" src={{model.book.image}}></div>
-      <div class="Column">
-        <div><span>{{model.book.title}}</span></div>
-        <div id="book-rating">{{book-rating book=model.book}}</div>
-        <div>by {{model.book.author}}</div>
-        <div>{{model.book.summary}}</div>
-        <div>{{model.book.year}}</div>
-      </div>
+  {{#link-to 'index' class="btn-home2"}}HOME{{/link-to}}<br><br>
+
+
+  <div class="row">
+    <div class="col-md-3">
+      <div><img class="book-tile img-responsive" src={{model.book.image}}></div>
+    </div>
+    <div class="col-md-1">
+    </div>
+    <div class="col-md-8">
+      <div class="title">{{model.book.title}}</div>
+      <div class="author">by {{model.book.author}}</div><br>
+      <div>{{model.book.summary}}</div>
     </div>
   </div>
 
-  {{new-review saveReview='saveReview' book=model.book}}<br><br>
+  {{new-review saveReview='saveReview' book=model.book}}<br><br><br><br>
 
-  {{#each model.book.reviews as |review|}}
-  <div>{{comment-rating review}}
-    {{review.title}} by {{review.author}}</div>
-  <div>{{review.content}}</div><br><br>
-  {{/each}}
+  <div class="review-element">
+    {{#each model.book.reviews as |review|}}
+      <div >
+        <div clas="star-rating">{{comment-rating review}}</div>
+        <div class="content review-title">{{review.title}}</div><br>
+        <div class="content">{{review.content}}</div>
+        <div class="content review-author">by <span style="font-weight: bold">{{review.author}}</span></div>
+      </div><br><br><br>
+    {{/each}}
+  </div>
+
 </div>
