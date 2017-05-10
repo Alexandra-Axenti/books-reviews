@@ -5,7 +5,13 @@
   <div class="row">
     {{#each model.books as |book|}}
       <div class="col-md-3">
-        <img id="admin-image" class="img-responsive" src={{book.image}}><br><br>
+        <img id="admin-image" src={{book.image}}><br><br>
+      </div>
+    {{/each}}
+  </div>
+  <div class="row">
+    {{#each model.books as |book|}}
+      <div class="col-md-3">
         {{edit-book book=book edit='edit' class="btn-tile"}}
       </div>
     {{/each}}

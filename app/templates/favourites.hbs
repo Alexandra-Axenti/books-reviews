@@ -1,0 +1,11 @@
+<div id="index">
+  <div class="row">
+    {{#link-to 'index' class="btn-admin"}}HOME{{/link-to}}
+    {{#link-to 'admin' class="btn-admin" id="btn-admin2"}}ADMIN{{/link-to}}
+  </div><br><br>
+
+  <div class="col-md-12">
+    {{favourites-list book=model}}
+  </div>
+
+</div>

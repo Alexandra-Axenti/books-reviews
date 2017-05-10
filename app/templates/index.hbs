@@ -1,13 +1,16 @@
 <div id="index">
-{{#link-to 'admin' class="btn-admin"}}ADMIN{{/link-to}}<br><br>
+  <div class="row">
+    {{#link-to 'favourites' class="btn-admin"}}FAVORITE BOOKS{{/link-to}}
+    {{#link-to 'admin' class="btn-admin" id="btn-admin2"}}ADMIN{{/link-to}}
+  </div><br><br>
 
-
-{{#each model as |book|}}
-
-        {{#link-to 'book' book.id}}<img src={{book.image}}>{{/link-to}}
-        <!-- {{book-rating book=book}} -->
-
-{{/each}}
-
+<div class="row">
+  <div class="col-md-12">
+    {{#each model as |book|}}
+      {{#link-to 'book' book.id}}<img src={{book.image}}>{{/link-to}}
+          <!-- {{book-rating book=book}} -->
+    {{/each}}
+  </div>
+</div>
 
 </div>

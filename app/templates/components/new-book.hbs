@@ -2,31 +2,31 @@
   <div class="add-book">
     <form>
       <div class="form-group">
-        {{input value=title id="title" placeholder="Title"}}
+        {{input value=title id="title-book" placeholder="Title"}}
       </div>
 
       <div class="form-group">
-        {{input value=author id="author" placeholder="Author"}}
+        {{input value=author id="author-book" placeholder="Author"}}
       </div>
 
       <div class="form-group">
-        {{input value=genre id="genre" placeholder="Genre"}}
+        {{input value=genre id="genre-book" placeholder="Genre"}}
       </div>
 
       <div class="form-group">
-        {{textarea value=summary id="summary" placeholder="Description"}}
+        {{textarea value=summary id="summary-book" placeholder="Description"}}
       </div>
 
       <div class="form-group">
-        {{textarea value=image id="image" placeholder="Image URL"}}
+        {{textarea value=image id="image-book" placeholder="Image URL"}}
       </div>
 
       <div class="form-group">
-        {{input value=publisher id="publisher" placeholder="Publisher"}}
+        {{input value=publisher id="publisher-book" placeholder="Publisher"}}
       </div>
 
       <div class="form-group">
-        {{input value=year id="year" placeholder="Year"}}
+        {{input value=year id="year-book" placeholder="Year"}}
       </div>
 
       <button class="btn-edit btn-add" {{action 'saveBook'}}>Add Book</button>

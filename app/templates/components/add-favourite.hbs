@@ -1,0 +1,9 @@
+<button class="btn-heart" {{action 'addToFavourites' book}}><i class="material-icons">favorite</i></button>
+
+
+<script>
+ $(".btn-heart").click(function() {
+   $(this).css('color','#ff3030');
+   $(this).css('background-color','transparent');
+ })
+</script>

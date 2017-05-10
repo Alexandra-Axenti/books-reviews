@@ -53,7 +53,7 @@ body {
   margin: 2% -4% -5% -4%;
   width: 110%;
   padding: 5% 10% 0 10%;
-  min-height: 900px;
+  min-height: 1000px;
 }
 
 
@@ -68,18 +68,19 @@ img {
   border: solid #381313 5px;
   border-radius: 5px;
   padding: 5px;
-  padding-top: 0;
+  float: left;
 }
 
 
 /* Index Page Elements */
 .btn-admin {
-  float: right;
+  float: left;
   font-size: 18px;
   color: #381313;
   padding: 3px;
   border: 2px solid #381313;
   border-radius: 5px;
+  margin-bottom: 2%;
 }
 
 .btn-admin:hover {
@@ -88,10 +89,14 @@ img {
   text-decoration: none;
 }
 
+#btn-admin2 {
+  float: right;
+}
+
 
 /* Book Page Elements */
 .btn-home2 {
-  float: right;
+  float: left;
   font-size: 18px;
   color: #381313;
   padding: 3px;
@@ -117,11 +122,7 @@ img {
   padding: 3%;
 }
 
-.row {
-  margin-bottom: 5%;
-}
-
-.title {
+.title-book {
   font-weight: bold;
   font-size: 24px;
 }
@@ -129,6 +130,37 @@ img {
 .author {
   font-style: italic;
   font-size: 16px;
+}
+
+.btn-heart {
+  font-size: 12px;
+  background-color: #381313;
+  border-color: #381313;
+  color: white;
+  border-radius: 55%;
+  padding: 1.4% 1.2% 0 1.2%;
+  float: right;
+  position: relative;
+  margin-top: -10%;
+}
+
+.btn-heart:hover {
+  background-color: white;
+  color: #381313;
+}
+
+.btn-heart:active {
+  background-color: #381313;
+  color: #fff;
+}
+
+.btn-heart:focus {
+  outline:0;
+}
+
+#book-title {
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 .content {
@@ -153,6 +185,15 @@ img {
   padding-bottom: 10%;
 }
 
+.row2 {
+  margin-top: 5%;
+  margin-left: 2%;
+}
+
+.row, .row2 {
+  overflow: scroll;
+}
+
 /* Add Review Form */
 .ember-text-field, select, textarea {
   width: 300px;
@@ -162,6 +203,22 @@ img {
   min-height: 100px;
 }
 
+.btn-new-review {
+  float: left;
+  font-size: 18px;
+  color: #381313;
+  padding: 3px 6px;
+  border: 2px solid #381313;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.btn-new-review:hover {
+  background-color: #381313;
+  color: white;
+  text-decoration: none;
+}
+
 /* Admin Page */
 #admin-image {
   border-color: rgba(255,255,255,0.7);
@@ -169,7 +226,7 @@ img {
 }
 
 .btn-home {
-  float: right;
+  float: left;
   font-size: 18px;
   color: white;
   padding: 3px;
@@ -205,5 +262,6 @@ img {
 }
 
 .btn-add {
+  margin-top: 40px;
   margin-left: 11%;
 }
