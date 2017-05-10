@@ -5,9 +5,7 @@ export default Ember.Component.extend({
 
   actions: {
     addToFavourites(item) {
-      if ((items.includes(item)) === false) {
       this.get('favouriteBooks').add(item);
-      }
     }
   }
 });
