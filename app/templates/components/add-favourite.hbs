@@ -1,5 +1,12 @@
-<button class="btn-heart" {{action 'addToFavourites' book}}><i class="material-icons">favorite</i></button>
+{{#if isFavourite}}
 
+<button class="btn-heart" style="color:#ff3030;background-color:transparent"><i class="material-icons">favorite</i></button>
+
+{{else}}
+
+<button class="btn-heart" {{action 'addToFavourites' book}}><i class="material-icons">favorite_border</i></button>
+
+{{/if}}
 
 <script>
  $(".btn-heart").click(function() {

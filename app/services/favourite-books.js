@@ -7,5 +7,9 @@ export default Ember.Service.extend({
     if ((this.get('items').includes(item)) == false) {
       this.get('items').pushObject(item);
     }
+  },
+
+  has(item) {
+    return this.get('items').includes(item)
   }
 });

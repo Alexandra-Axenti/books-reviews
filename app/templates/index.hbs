@@ -7,8 +7,10 @@
 <div class="row">
   <div class="col-md-12">
     {{#each model as |book|}}
-      {{#link-to 'book' book.id}}<img src={{book.image}}>{{/link-to}}
-          <!-- {{book-rating book=book}} -->
+      <div id="book-block">
+        <div id="star-row">{{book-rating book=book}}</div>
+        {{#link-to 'book' book.id}}<img src={{book.image}}>{{/link-to}}
+      </div>
     {{/each}}
   </div>
 </div>
