@@ -4,7 +4,7 @@ A sample crowd-website providing book reviews.
 
 ## Getting Started
 
-* open terminal
+* open the local terminal on your laptop / computer, then type:
 * `git clone` https://github.com/Alexandra-Axenti/books-reviews.git
 
 ## Installation
