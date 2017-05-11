@@ -15,7 +15,7 @@ export function booksRating(params/*, hash*/) {
   var empty = '<i class="material-icons">star_border</i>';
   var half = '<i class="material-icons">star_half</i>';
 
-  if (counter == 0) {
+  if (counter === 0) {
     return Ember.String.htmlSafe(' ');
   } else {
     return Ember.String.htmlSafe(star.repeat(bookRating|0) + half.repeat(Math.round(bookRating%1)) + empty.repeat((5-bookRating)|0));
