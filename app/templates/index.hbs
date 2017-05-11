@@ -6,13 +6,18 @@
 
 <div class="row">
   <div class="col-md-12">
-    {{#each model as |book|}}
-      <div id="book-block">
-        <div id="star-row">{{book-rating book=book}}</div>
+    {{#each  (await model.books) as |book|}}
+      <div class="book-block">
+        <div id="star-row">
+          {{books-rating  book.reviews}}
+        </div>
         {{#link-to 'book' book.id}}<img src={{book.image}}>{{/link-to}}
       </div>
     {{/each}}
   </div>
+</div>
+
+<div class="end-element">
 </div>
 
 </div>

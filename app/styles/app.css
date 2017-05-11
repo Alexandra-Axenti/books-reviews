@@ -94,10 +94,10 @@ img {
 }
 
 #star-row {
-  padding: 3% 30%;
+  text-align: center;
 }
 
-#book-block {
+.book-block {
   display: inline-block;
   margin: 1%;
   float: left;
@@ -268,4 +268,20 @@ img {
 .btn-add {
   margin-top: 40px;
   margin-left: 11%;
+}
+
+.editBook {
+  position: absolute;
+  z-index: 56;
+}
+
+.admin-form {
+  background-color: rgba(0,0,0,0.9);
+  padding: 2%;
+  margin: 0 -1% -4% -1%;
+}
+
+.end-element {
+  padding-bottom: 10%;
+  padding-top: 5%;
 }

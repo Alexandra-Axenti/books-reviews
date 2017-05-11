@@ -1,6 +1,7 @@
+
 {{#if editBookForm}}
 
-  <div>
+  <div class="editBook">
     <form class="admin-form">
       <div class="form-group">
         {{input value=title id="title" placeholder=book.title}}
@@ -30,12 +31,14 @@
         {{input value=year id="year" placeholder=book.year}}
       </div>
 
-      <button {{action 'edit' book}}>Save</button>
+      <button name="anchor" {{action 'edit' book}}>Save</button>
     </form>
   </div>
 
 {{else}}
 
-  <button class="btn-edit" {{action 'editBookForm'}}>Edit Book</button>
+  <div class="btn-show">
+      <button class="btn-edit" href="anchor" {{action 'editBookForm'}}>Edit Book</button>
+  </div>
 
 {{/if}}

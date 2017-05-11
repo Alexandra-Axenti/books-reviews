@@ -3,20 +3,18 @@
   {{#link-to 'index' class="btn-home"}}HOME{{/link-to}}<br><br>
 
   <div class="row">
-    {{#each model.books as |book|}}
-      <div class="col-md-3">
-        <img id="admin-image" src={{book.image}}><br><br>
-      </div>
-    {{/each}}
+    <div class="col-md-12">
+      {{#each model.books as |book|}}
+        <div id="book-block">
+          {{#link-to 'book' book.id}}<img id="admin-image" src={{book.image}}>{{/link-to}}
+          {{edit-book book=book edit='edit'}}
+        </div>
+      {{/each}}
+    </div>
   </div>
-  <div class="row">
-    {{#each model.books as |book|}}
-      <div class="col-md-3">
-        {{edit-book book=book edit='edit' class="btn-tile"}}
-      </div>
-    {{/each}}
-  </div><br><br>
 
-  {{new-book saveBook='saveBook'}}<br><br><br><br>
 
+  <div class="end-element">
+    {{new-book saveBook='saveBook'}}
+  </div>
 </div>
